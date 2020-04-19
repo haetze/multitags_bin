@@ -14,3 +14,8 @@ clap = { git = "https://github.com/clap-rs/clap/" }
 [dependencies.multitags_lib]
 git = "https://github.com/haetze/multitags_lib"
 rev = "faeb20224cece78c7f20966080748b8e284e305b"
+
+
+[[bin]]
+name = "mt"
+path = "src/main.rs"
