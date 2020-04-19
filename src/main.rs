@@ -49,6 +49,10 @@ fn main() {
                     db.add_tag_to_file(file.clone(), &tag);
                 }
             }
+            match db.dump_db() {
+                Err(_) => println!("Error Writing DB"),
+                Ok(_) => println!("DB stored at {}", opts.db),
+            }
         },
         Subcommand::Search(mut search_c) => {
             if let Some(tag) = Tag::from_str(&mut search_c.tag) {
@@ -61,10 +65,7 @@ fn main() {
         },
     }
 
-    match db.dump_db() {
-        Err(_) => println!("Error Writing DB"),
-        Ok(_) => println!("DB stored at {}", opts.db),
-    }
+
 
 
 
