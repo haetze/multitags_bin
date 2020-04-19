@@ -4,7 +4,7 @@
 #+EMAIL: richy.sting@gmail.com
 #+OPTIONS: title:nil toc:nil
 
-[[https://img.shields.io/github/license/haetze/multitags_bin][Github]]
+[[https://img.shields.io/github/license/haetze/multitags_bin]]
 
 * Multitags
 
