@@ -1,0 +1,43 @@
+#+TITLE: README
+#+DATE: 19 Apr 2020
+#+AUTHOR: Richard Stewing
+#+EMAIL: richy.sting@gmail.com
+#+OPTIONS: title:nil toc:nil
+
+* Multitags
+
+=Multitags= is a simple tagging utility for files that works on a per project basis.
+It is mainly an interface for the [[https://github.com/haetze/multitags_lib][Multitags Lib]].
+
+** Adding Tags
+A tag can be added using:
+#+begin_example
+mt add filename tag1 tag2
+#+end_example
+
+
+** Searching Tags 
+Searching for all files matching a given Tag can be accomplished by:
+#+begin_example
+mt search tag
+#+end_example
+
+** Installation 
+Run =cargo install --path .=.
+
+** Tags
+Tags are a hierarchical structure similar to a file system.
+Elements are separated by =:=. 
+An example of a Tag is =2020:vacation:summer:italy:beach= or =kids:juli:graduation=.
+Tags support three kinds of build in data types:
+- Numbers, eg. =2020=
+- Dates, eg. =20-04-2020= 
+- Strings, everything that does not match the former mentioned types.
+
+Currently searching with a tag is a ''contains`` relation.
+Ie. =vacation:summer= matches =2020:vacation:summer:italy:beach=.
+It is planned to extend the search capabilities to at least
+- query_1 and query_2 
+- query_1 and query_2
+- begins with tag
+- ends with tag 
