@@ -4,6 +4,8 @@
 #+EMAIL: richy.sting@gmail.com
 #+OPTIONS: title:nil toc:nil
 
+[[https://img.shields.io/github/license/haetze/multitags_bin][Github]]
+
 * Multitags
 
 =Multitags= is a simple tagging utility for files that works on a per project basis.
