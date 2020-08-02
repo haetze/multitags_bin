@@ -1,6 +1,6 @@
 [package]
 name = "multitags_bin"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Richard Stewing <richard.stewing@udo.edu>"]
 edition = "2018"
 
@@ -13,7 +13,7 @@ clap = { git = "https://github.com/clap-rs/clap/" }
 
 [dependencies.multitags_lib]
 git = "https://github.com/haetze/multitags_lib"
-rev = "06e67e5ee9ddb5b7382dc1b78bb9953b4c566311"
+rev = "bd3c51a89aa2b7ba9a0752094f8348d5c6558b83"
 
 
 [[bin]]
