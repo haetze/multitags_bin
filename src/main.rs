@@ -6,7 +6,7 @@ use multitags_lib::query::*;
 use clap::Clap;
 
 #[derive(Clap)]
-#[clap(version = "0.1.0", author = "Richard S.")]
+#[clap(version = "0.2.0", author = "Richard S.")]
 struct Opts {
     #[clap(short = 'f', long = "file", default_value = "./.multitags")]
     db: String,
@@ -16,9 +16,9 @@ struct Opts {
 
 #[derive(Clap, Debug)]
 enum Subcommand {
-    #[clap(name = "add", version = "0.1.0")]
+    #[clap(name = "add", version = "0.2.0")]
     Add(Add),
-    #[clap(name = "search", version = "0.1.0")]
+    #[clap(name = "search", version = "0.2.0")]
     Search(Search)
 }
 
