@@ -8,7 +8,7 @@ use clap::Clap;
 #[derive(Clap)]
 #[clap(version = "0.1.0", author = "Richard S.")]
 struct Opts {
-    #[clap(short = "f", long = "file", default_value = "./.multitags")]
+    #[clap(short = 'f', long = "file", default_value = "./.multitags")]
     db: String,
     #[clap(subcommand)]
     subcmd: Subcommand,
